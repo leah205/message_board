@@ -3,17 +3,28 @@ const messages = [
     {
         text: "Good morning",
         user: "amanda",
-        added: new Date(),
+        added: formatDate(new Date()),
         id: 1,
     },
     {
         text: "Hello",
         user: "steve",
-        added: new Date(),
+        added: formatDate(new Date()),
         id: 2
         
     }
 ]
+
+function formatDate(date){
+    return date.toLocaleDateString('en-us', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    })
+}
 
 async function getNew(req, res){
     res.render("form")

@@ -125,3 +125,9 @@ form{
         width: 80%;
     }
 }
+
+.back-from-error{
+    display: block;
+    width: 150px;
+    margin: auto;
+}

@@ -53,7 +53,7 @@ async function getMessage(req, res, next){
     let id = req.params.id
     let message = messages.find((m) => m.id == id)
     if(!message){
-        next("404 Not found")
+        next()
     }
     res.render("message", {message: message})
 }

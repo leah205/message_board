@@ -1,6 +1,8 @@
 :root{
     --accent: rgb(202, 243, 255);
+    --main: black;
 }
+
 body {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
@@ -40,4 +42,50 @@ button{
 a{
     text-decoration: none;
     color: var(--accent)
+}
+
+button{
+      color: var(--accent)
+}
+button:hover{
+    background: rgb(63, 63, 63);
+}
+input{
+    border: 1px solid var(--accent);
+    margin-left: 5px;
+    border-radius: 2px;
+    background: black;
+    color: var(--accent)
+}
+
+.input-field{
+    margin-bottom: 10px;
+}
+
+form{
+    background: var(--main);
+     border: 2px solid var(--accent);
+     border-radius: 5px;
+     position: absolute;
+       top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+}
+
+.message-wrapper{
+    width: 500px;
+    padding: 20px;
+    border: 2px solid var(--accent);
+    background: black;
+    margin: auto;
+     margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back-message{
+     border: 0;
 }

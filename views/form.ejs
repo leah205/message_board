@@ -4,16 +4,17 @@
 <%- include('header')%>
 </head>
 <body>
-    <h1>Submit a Message</h1>
+   <%- include('back-button')%>
     <form action="/new" method = "POST">
-        <div>
+         <h1>Submit a Message</h1>
+        <div class = 'input-field'>
             <label for="name">
                 Name:
             </label>
             <input type="text" id = "name" name = "name">
         </div>
 
-         <div>
+         <div class = 'input-field'>
             <label for="message">
                 Message:
             </label>

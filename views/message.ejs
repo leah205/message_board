@@ -2,14 +2,13 @@
 <html lang="en">
 <%- include('header')%>
 <body>
-    <div>
+     <%- include('back-button')%>
+    <div class = 'message-wrapper'>
         <p><%= message.text %></p>
         <p><%= message.user %></p>
         <p><%= message.added %></p>
     </div>
 
-    <button type = 'button'>
-        <a href="..">back</a>
-    </button>
+   
 </body>
 </html>

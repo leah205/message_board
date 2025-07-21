@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Michroma&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1><%= title %></h1>
+    <div class="messages-wrapper">
     <% messages.forEach((message) => {%>
-        <div>
+        <div class = 'message'>
             <p><%= message.text%></p>
              <p><%= message.user%></p>
               <p><%= message.added%></p>
@@ -17,6 +23,7 @@
         </div>
 
    <% })%>
+    </div>
 
    <button type = "button"><a href="/new">
     Add Message

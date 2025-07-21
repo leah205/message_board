@@ -37,7 +37,7 @@ async function postNew(req, res){
     messages.push({
         text: messageText, 
         user: name, 
-        added: new Date(),
+        added: formatDate(new Date()),
         id: idCounter
     })
     idCounter += 1

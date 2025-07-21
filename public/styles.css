@@ -19,8 +19,11 @@ button, a, input{
 .messages-wrapper{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    width: 90vw;
+    margin: auto;
+    row-gap: 20px;
     margin-bottom: 20px;
+    justify-content: space-between;
    
 }
 .messages-wrapper .message{
@@ -31,6 +34,7 @@ button, a, input{
     padding: 20px;
     border-radius: 15px;
      border: 2px solid var(--accent);
+ 
 }
 button{
     border: 1px solid var(--accent);
@@ -88,4 +92,9 @@ form{
 }
 .back-message{
      border: 0;
+}
+.add-message{
+    width: 200px;
+    margin: auto;
+    display: block;
 }

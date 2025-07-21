@@ -22,9 +22,10 @@ async function getNew(req, res){
 async function postNew(req, res){
     let messageText = req.body.messageText
     let name = req.body.name
+    
     messages.push({
         text: messageText, 
-        name: name, 
+        user: name, 
         added: new Date(),
         id: idCounter
     })
